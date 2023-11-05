@@ -3,27 +3,49 @@
 
 <head>
     <title>BenFlix</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <button onclick="print()"> Click on Me</button>
+    <header class="header">
+        <div class="logo">
+            <img class="logo-png" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+                alt="netflix logo">
+        </div>
+        <div class="search">
 
-    <script>
-        //event
-        // event handler
-        // event listener.
-        function print() {
-            console.log("You clicked!");
-        }
+            <div class="search-bar">
+                <input type="text" onkeyup="searchMovie()" class="search-box" placeholder="Search Movie" id="search">
+                <img onclick="searchMovie()" src="./search.png" alt="search png" class="search-icon">
+            </div>
 
-        function dosomething() {
+        </div>
+    </header>
+    <div class="movies" id="movies">
+        <!-- <div class="movie">
+            <div class="overlay">
+                <div class="video">
 
-        }
+                </div>
+                <div class="details">
+                    <h1>
+                        The hundred
+                    </h1>
+                    <h2>IMBD 7.8</h2>
+                    <P>
+                        Octavia . Blake . Clerk
+                    </P>
+                </div>
+            </div>
+            <img class="poster"
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a7db5b3a-3426-4fe8-b7f8-fa2f8cc964fa/dejc4v0-2419a453-57b0-41f7-a4dd-484b56c0ef80.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E3ZGI1YjNhLTM0MjYtNGZlOC1iN2Y4LWZhMmY4Y2M5NjRmYVwvZGVqYzR2MC0yNDE5YTQ1My01N2IwLTQxZjctYTRkZC00ODRiNTZjMGVmODAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.BNPBMkC7HkHyOrerYv45VzzGhmddfAxBB8SG8FUwEgM"
+                alt="movie">
 
+        </div> -->
 
-    </script>
-
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
